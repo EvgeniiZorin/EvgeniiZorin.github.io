@@ -1,4 +1,4 @@
-This is a repository for my **personal website** that I created upon a free template from HTML5 (see Credits). 
+This is a repository for my **personal website** that I created upon a free template from HTML5 (https://html5up.net/massively). 
 
 Credits: 
 - Massively by HTML5 UP
