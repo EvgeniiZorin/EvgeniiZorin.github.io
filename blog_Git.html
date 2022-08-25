@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+
+
+<html>
+	<head>
+		<title>Blog - Evgenii Zorin</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Evgenii Zorin personal website</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About me</a></li>
+							<!-- <li><a href="generic.html">Generic Page</a></li> -->
+							<!-- Below i'll write a blog later. For example check elements.html -->
+							<!-- <li><a href="elements.html">Blog</a></li>  -->
+							<li class="active"><a href="blog.html">Blog</a></li>
+							<li><a href="certificates.html">Certificates</a></li>
+							
+							<li><a href="documents/CV_EvgeniiZorin.pdf">CV</a></li>
+						</ul>
+							<!-- <li><a href="index.html">This is Massively</a></li> -->
+							<!-- <li><a href="generic.html">Generic Page</a></li> -->
+							<!-- <li class="active"><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/e-zorin/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/EvgeniiZorin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+										<article>
+											<h2>What is <b>Git</b> and how to use it - a personal insight</h2>
+											<p style="line-height:30px;">
+												In my journey of learning programming, I have come a long way in implementing version control. 
+												At first, my idea of version control was to pack the current state of a program in a folder, 
+												call it with date and version number, and then duplicate the folder if i wanted to continue working
+												into a new version. I have heard of Git at that time, but I didn't entrust my version control to a 
+												system that I cannot see. Currently, I cannot imagine my life without using Git for versioning my 
+												programs! In this blog entry, I would like to write about why I love Git so much.
+											</p>
+											<p style="line-height:30px;">
+												There are a number of reasons I love using Git:
+												<li style="margin-top:-30px;">Once you learn the basic commands, It is very easy to switch between versions
+													of your code, if you decide to change things around; </li>
+												<li>I store my programs on Github, and with Git it is very easy to download the current 
+													(or a specified) version of any program to my local computer, edit, then push the new
+													version to Github!</li>
+											</p>
+											<h3>What is git</h3>
+											<p>
+												In short, Git is a type of version control system (VCS) that keeps track of diffferent changes made to your code.
+												In essence, you can run Git in CLI to save states of your programs in different
+												times of editing, just like you can do in a computer game by saving your progress. Git allows the programmer 
+												to revert to any state (or version) of the program. 
+											</p>
+											<h3>Basic commands</h3>
+											<p>
+												First, we need to install Git locally on your PC. You can check Git version by <code>git --version</code>
+												and check current configurations, such as user.name and user.email, by <code>git config -l</code>.
+											</p>
+											<p>
+												To clone a repository from Github, you can use the command <code>git clone [ssh / https address]</code>. Cloning is bringing
+												a repository hosted on Github to your local PC. You can use SSH or HTTPS, depending on which one works for you.
+												Alternatively, if you would like to start a new project and start tracking it from your local machine, you
+												can use <code>git init</code>. <br>
+												Once you have started or cloned Git repository, you can check the status of your work - <code>git status</code> - which will 
+												tell you which files have been changed. <br>
+
+												To check commit history, use <code>git log</code>:
+												<li style="margin-top:-30px;">The tag <code>--oneline</code> will show one version per line, which is very convenient</li>
+												<li><code>-1</code> will only show the last commit</li>
+												<li><code>git diff</code> will show differences and alterations</li><br>
+												
+												When we have made the changes and would like to save the current state of the program, we first need to add changes to staging/tracking:
+												<li><code>git add .</code> to add all files changes</li>
+												<li><code>git add filename.ext</code> to track just one file</li><br>
+												Subsequently, we need to commit changes, meaning that the changes will be added as a version to Git system. 
+												This can be done by <code>git commit -m "Comment here"</code>. <br>
+												Finally, we can push the changes made online to hosting repository: <code>git push</code>. 
+											</p>
+											<h3>Working with branches</h3>
+											<p>
+
+											</p>
+										</article>
+									<br>
+
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p>zorin.evgenii.m@gmail.com</p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/e-zorin/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+								<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+								<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+								<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+								<li><a href="https://github.com/EvgeniiZorin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
