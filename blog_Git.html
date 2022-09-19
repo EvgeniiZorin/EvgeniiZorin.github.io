@@ -81,8 +81,20 @@
 												and check current configurations, such as user.name and user.email, by <code>git config -l</code>.
 											</p>
 											<p>
+												You could create a repository and files locally, start tracking from local computer, and then push to github by the following steps:
+												<li style="margin-top:-30px;">Create a local repo, make changes</li>
+												<li><code>git init</code></li>
+												<li><code>git add .</code></li>
+												<li><code>git commit -m "Message"</code></li>
+												<li>Create a repo on Github, copy the HTTPS link</li>
+												<li><code>git remote add origin [https]</code></li>
+												<li><code>git push -u origin main</code></li>
+											</p>
+											<p>
 												<u>To clone a repository from Github</u>, you can use the command <code>git clone [ssh / https address]</code>. Cloning is bringing
-												a repository hosted on Github to your local PC. You can use SSH or HTTPS, depending on which one works for you.
+												a repository hosted on Github to your local PC. You can use SSH or HTTPS, depending on which one works for you. If you already have a
+												repository from Github, but the one on Github has changes that weren't updated on the local PC, we can update local repo from the 
+												latest changes in Github with <code>git pull --rebase</code> or <code>git pull origin main</code>, instead of "main" you could try "master".
 												Alternatively, if you would like to <u>start a new project</u> and start tracking it from your local machine, you
 												can use <code>git init</code>. <br>
 												Once you have started or cloned Git repository, you can <u>check the status of your work</u> - <code>git status</code> - which will 
@@ -97,7 +109,11 @@
 												<li><code>git add .</code> to add all files changes</li>
 												<li><code>git add filename.ext</code> to track just one file</li><br>
 												Subsequently, we need to <u>commit changes</u>, meaning that the changes will be added as a version to Git system. 
-												This can be done by <code>git commit -m "Comment here"</code>. <br>
+												This can be done by <code>git commit -m "Comment here"</code>. If you made a recent commit, but forgot to make small
+												edits in that commit, you can recommit the latest change to add it onto the latest commit: 
+												<li><code>git add .</code></li>
+												<li><code>git commit --amend</code></li>
+												<li><code>git push --force</code></li> <br>
 												Finally, we can push the changes made online to hosting repository: <code>git push</code>. 
 											</p>
 											<h3>Working with branches</h3>
