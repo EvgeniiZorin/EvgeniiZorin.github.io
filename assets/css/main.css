@@ -45,11 +45,11 @@ footer, header, hgroup, menu, nav, section {
   }
 
 
-  .text {
+  .text-left {
 	/* align-self: flex-end; */
   }
   
-  .image {
+  .image-right {
 	/* width: 42px; */
 	width: 30%;
 	height: 50%;
@@ -57,7 +57,18 @@ footer, header, hgroup, menu, nav, section {
 	margin-left: auto;
 	/* height: 42px; */
   }
-  
+
+  .image-left {
+	/* width: 42px; */
+	width: 30%;
+	height: 50%;
+	padding-right: 30px;
+	margin-right: auto;
+	/* height: 42px; */
+  }
+
+
+
   .paragraph {
 	display: flex;
   }
